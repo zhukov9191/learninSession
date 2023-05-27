@@ -1,77 +1,208 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Green Life</title>
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Dairo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  about me
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <h1>Productos</h1>
-      <h2>Viveres</h2>
-      <p>
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-        las industrias desde el año 1500, cuando un impresor (N. del T. persona
-        que se dedica a la imprenta) desconocido usó una galería de textos y los
-        mezcló de tal manera que logró hacer un libro de textos especimen. No
-        sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
-        en documentos electrónicos, quedando esencialmente igual al original.
-        Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-        cuales contenian pasajes de Lorem Ipsum, y más recientemente con
-        software de autoedición, como por ejemplo Aldus PageMaker, el cual
-        incluye versiones de Lorem Ipsum.
-      </p>
-      <h3>Descuento</h3>
-      <p>simple paragraph x1</p>
-      <p>simple paragraph x2</p>
-      <h4>Precio</h4>
-      <h5>Politicas de compra</h5>
-      <h6>Condiciones y restricciones</h6>
-      <b>contacto</b>
-      <i>devoluciones</i>
-      <u>telefonos</u>
-      <p>
-        All of the follow text is wrapped into a paragraph tag:
-        <b>contacto 2</b>
-        <i>devoluciones 2</i>
-        <u>telefonos 2</u>
-      </p>
-      <p>
-        <b>
-          <i>
-            <u>me rio de janeiro</u>
-          </i>
-        </b>
-      </p>
+      <section class="container text-center">
+        <h1>My Projects</h1>
+        <br />
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://www.petdarling.com/wp-content/uploads/2021/01/cachorros.jpg"
+                  class="card-img-top"
+                  alt="dog"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <section>
-      <video width="940" height="400" controls>
-        <source
-          src="https://res.cloudinary.com/dxg9gszax/video/upload/v1643900779/kromac-ui/Avenged_Sevenfold_-_Wish_You_Were_Here_g2vaqu.mp4"
-        />
-        video musical
-      </video>
-      <img
-        width="500"
-        height="300"
-        src="https://cdn.pixabay.com/photo/2023/05/13/19/36/woman-7991234_1280.jpg"
-      />
-    </section>
-    <section>
-      <ol>
-        <li>elemento 1</li>
-        <li>elemento 2</li>
-        <li>elemento 3</li>
-        <li>elemento 4
-					<ol>
-						<li>elemento 1</li>
-						<li>elemento 2</li>
-						<li>elemento 3</li>
-						<li>elemento 4</li>
-					</ol>
-				</li>
-      </ol>
-      
-    </section>
+    <br />
+    <br />
+    <footer class="bg-primary">
+      <section class="text-center">
+        <br />
+        <label> &copy;Copyright 2023 </label>
+        <br />
+        <br />
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
